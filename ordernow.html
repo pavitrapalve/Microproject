@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now</title>
+   <style>
+	body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+.order-box {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #218838;
+}
+</style>
+</head>
+<body>
+    <div class="order-box">
+        <h2>Order Now</h2>
+        <form>
+             <input type="text" placeholder="Full Name" required>
+
+            <select>
+                <option>Select Product</option>
+                <option>Appertizer</option>
+                <option>Soups and Salad</option>    
+		<option>Main food</option>
+		<option>Tandoor Rotti</option>
+                <option>Rice</option>
+		<option>Dessert</option>
+		</select>
+
+		<textarea placeholder="Sub menu" required></textarea>
+			
+            <input type="number" placeholder="Quantity" min="1" required>
+		<textarea placeholder="Mobile number" required></textarea>
+		 
+            <input type="email" placeholder="Email" required>
+
+		<textarea placeholder="Delivery Address" required></textarea>
+		
+
+
+	        <button type="submit">Place Order</button>
+        </form>
+    </div>
+</body>
+</html>
